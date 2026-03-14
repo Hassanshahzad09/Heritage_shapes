@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Heritage Shapes — Premium custom printing, packaging, and branding for ambitious ecommerce brands worldwide.">
+<title>Heritage Shapes — Printing · Packaging · Branding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- SCROLL PROGRESS -->
+<div id="spb"></div>
+
+<!-- CURSOR -->
+<div class="c-dot" id="cdot"></div>
+<div class="c-ring" id="cring"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="ld-arches">
+    <div class="ld-arch"></div>
+    <div class="ld-arch"></div>
+    <div class="ld-arch"></div>
+  </div>
+  <div class="ld-line"></div>
+  <div class="ld-word">Heritage Shapes</div>
+  <div class="ld-bar"></div>
+</div>
+
+<!-- BACK TO TOP -->
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <div class="btt-arr"></div>
+</button>
+
+<!-- ══ NAV ══ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">
+    <div class="nav-mark"><div class="nm-arch"></div><div class="nm-base"></div></div>
+    <div class="nav-name">Heritage Shapes</div>
+  </a>
+  <div class="nav-links">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#products" class="nav-link">Products</a>
+    <a href="#eco" class="nav-link">Sustainability</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+  <a href="#contact" class="nav-cta"><span>Get a Quote</span></a>
+  <button class="nav-ham" id="ham" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#products" onclick="closeMenu()">Products</a>
+  <a href="#eco" onclick="closeMenu()">Sustainability</a>
+  <a href="#contact" onclick="closeMenu()">Contact & Quote</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-l">
+    <div class="hero-eye" id="heroEye">
+      <div class="hero-eye-line" id="heroLine"></div>
+      <span id="heroEyeSpan">Printing · Packaging · Branding</span>
+    </div>
+    <h1 class="hero-h" id="heroH">
+      <span class="hero-word"><span>Packaging</span></span>
+      <span style="font-family:var(--serif);font-weight:300;font-size:inherit;"> that </span><br>
+      <span class="hero-word"><span>makes your</span></span> <span class="hero-word"><span>brand</span></span><br>
+      <em class="hero-word" style="display:inline-block;overflow:hidden;"><span style="display:inline-block;transform:translateY(110%);transition:transform .9s var(--ease-out);">unforgettable.</span></em>
+    </h1>
+    <p class="hero-sub" id="heroSub">Heritage Shapes crafts premium, sustainable custom packaging for ambitious ecommerce brands. Exceptional quality, flexible minimums, and design-led execution — delivered globally.</p>
+    <div class="hero-btns" id="heroBtns">
+      <a href="#contact" class="btn btn-blue"><span>Request Free Sample Kit</span></a>
+      <a href="#products" class="btn btn-outline-blue"><span>View Our Work</span></a>
+    </div>
+    <div class="hero-stats" id="heroStats">
+      <div class="h-stat">
+        <div class="h-stat-n"><span class="cu" data-t="200">0</span>+</div>
+        <div class="h-stat-l">Min. Units</div>
+      </div>
+      <div class="h-stat">
+        <div class="h-stat-n"><span class="cu" data-t="14">0</span></div>
+        <div class="h-stat-l">Day Turnaround</div>
+      </div>
+      <div class="h-stat">
+        <div class="h-stat-n"><span class="cu" data-t="60">0</span>%</div>
+        <div class="h-stat-l">Cost Saving</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-r" id="heroR">
+    <div class="h-arch h-arch-1" id="ha1"></div>
+    <div class="h-arch h-arch-2" id="ha2"></div>
+    <div class="h-arch h-arch-3" id="ha3"></div>
+    <div class="h-arch h-arch-4" id="ha4"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-badge" id="heroBadge">
+      <div class="hb-tag">Eco Verified</div>
+      <div class="hb-num">100%</div>
+      <div class="hb-tag">Recyclable</div>
+    </div>
+    <div class="hero-r-brand" id="heroRBrand">
+      <div class="hero-r-name">Heritage</div>
+      <div class="hero-r-tag">Printing · Packaging · Branding</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MARQUEE ══ -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="mq-item">Custom Boxes</span><span class="mq-sep">·</span>
+    <span class="mq-item">Mailer Boxes</span><span class="mq-sep">·</span>
+    <span class="mq-item">Tissue Paper</span><span class="mq-sep">·</span>
+    <span class="mq-item">Eco Packaging</span><span class="mq-sep">·</span>
+    <span class="mq-item">Brand Labels</span><span class="mq-sep">·</span>
+    <span class="mq-item">Gift Bags</span><span class="mq-sep">·</span>
+    <span class="mq-item">Unboxing Kits</span><span class="mq-sep">·</span>
+    <span class="mq-item">Rigid Boxes</span><span class="mq-sep">·</span>
+    <span class="mq-item">FSC Certified</span><span class="mq-sep">·</span>
+    <span class="mq-item">Custom Inserts</span><span class="mq-sep">·</span>
+    <span class="mq-item">EPR Compliant</span><span class="mq-sep">·</span>
+    <span class="mq-item">Premium Print</span><span class="mq-sep">·</span>
+    <span class="mq-item">Custom Boxes</span><span class="mq-sep">·</span>
+    <span class="mq-item">Mailer Boxes</span><span class="mq-sep">·</span>
+    <span class="mq-item">Tissue Paper</span><span class="mq-sep">·</span>
+    <span class="mq-item">Eco Packaging</span><span class="mq-sep">·</span>
+    <span class="mq-item">Brand Labels</span><span class="mq-sep">·</span>
+    <span class="mq-item">Gift Bags</span><span class="mq-sep">·</span>
+    <span class="mq-item">Unboxing Kits</span><span class="mq-sep">·</span>
+    <span class="mq-item">Rigid Boxes</span><span class="mq-sep">·</span>
+    <span class="mq-item">FSC Certified</span><span class="mq-sep">·</span>
+    <span class="mq-item">Custom Inserts</span><span class="mq-sep">·</span>
+    <span class="mq-item">EPR Compliant</span><span class="mq-sep">·</span>
+    <span class="mq-item">Premium Print</span><span class="mq-sep">·</span>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div data-reveal="left">
+    <div class="about-card">
+      <div class="ac-arch ac-arch-1"></div>
+      <div class="ac-arch ac-arch-2"></div>
+      <div class="ac-hs">HS</div>
+      <div class="ac-label">Heritage Shapes · Premium Packaging Studio</div>
+      <div class="ac-metrics">
+        <div class="ac-metric"><div class="ac-mn">200+</div><div class="ac-ml">Min. Order</div></div>
+        <div class="ac-metric"><div class="ac-mn">14d</div><div class="ac-ml">Lead Time</div></div>
+        <div class="ac-metric"><div class="ac-mn">60%</div><div class="ac-ml">Cost Saving</div></div>
+        <div class="ac-metric"><div class="ac-mn">100%</div><div class="ac-ml">Eco Materials</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="about-txt" data-reveal="right">
+    <div class="s-eye">About Heritage Shapes</div>
+    <h2 class="s-h">Crafted with purpose.<br>Delivered with <em>precision.</em></h2>
+    <p class="s-body">Heritage Shapes is a premium printing and packaging studio serving ecommerce brands worldwide. We believe packaging is the first physical moment your customer experiences your brand — and we make that moment extraordinary.</p>
+    <div style="margin-top:32px;">
+      <div class="pillar" data-reveal="up" data-delay="1">
+        <div class="p-icon"><div class="p-arch"></div></div>
+        <div><div class="p-title">Premium Quality</div><div class="p-sub">Every product meets the highest standards of finish, material, and print quality.</div></div>
+      </div>
+      <div class="pillar" data-reveal="up" data-delay="2">
+        <div class="p-icon"><div class="p-arch"></div></div>
+        <div><div class="p-title">Design Excellence</div><div class="p-sub">Custom design included with every order. Your brand identity, perfected.</div></div>
+      </div>
+      <div class="pillar" data-reveal="up" data-delay="3">
+        <div class="p-icon"><div class="p-arch"></div></div>
+        <div><div class="p-title">Global Delivery</div><div class="p-sub">Reliable international shipping with full tracking on every order.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section id="services">
+  <div class="srv-head" data-reveal="up">
+    <div>
+      <div class="s-eye">What We Do</div>
+      <h2 class="s-h">Full-service packaging<br>for <em>every brand.</em></h2>
+    </div>
+    <a href="#contact" class="btn btn-outline-blue"><span>Get a Quote</span></a>
+  </div>
+  <div class="srv-grid">
+    <div class="srv-card" data-reveal="up" data-delay="1">
+      <div class="srv-num">01</div>
+      <div class="srv-title">Custom Packaging</div>
+      <div class="srv-body">Bespoke boxes, mailers, and rigid packaging designed to your exact specifications. Every dimension and finish crafted with precision.</div>
+      <div class="srv-tags"><span class="srv-tag">Custom Boxes</span><span class="srv-tag">Mailers</span><span class="srv-tag">Rigid Boxes</span></div>
+    </div>
+    <div class="srv-card" data-reveal="up" data-delay="2">
+      <div class="srv-num">02</div>
+      <div class="srv-title">Premium Printing</div>
+      <div class="srv-body">High-fidelity digital and offset printing with premium finishes — matte, gloss, soft-touch, foiling, and embossing for maximum brand impact.</div>
+      <div class="srv-tags"><span class="srv-tag">Digital Print</span><span class="srv-tag">Foiling</span><span class="srv-tag">Embossing</span></div>
+    </div>
+    <div class="srv-card" data-reveal="up" data-delay="3">
+      <div class="srv-num">03</div>
+      <div class="srv-title">Brand Identity</div>
+      <div class="srv-body">End-to-end brand packaging design — from logo application to full unboxing experience creation. We make your brand look extraordinary.</div>
+      <div class="srv-tags"><span class="srv-tag">Design</span><span class="srv-tag">Branding</span><span class="srv-tag">Consultation</span></div>
+    </div>
+    <div class="srv-card" data-reveal="up" data-delay="1">
+      <div class="srv-num">04</div>
+      <div class="srv-title">Unboxing Experience</div>
+      <div class="srv-body">Complete unboxing kits: branded tissue paper, custom stickers, thank-you cards, ribbon, and inserts. Every delivery a memorable moment.</div>
+      <div class="srv-tags"><span class="srv-tag">Tissue Paper</span><span class="srv-tag">Inserts</span><span class="srv-tag">Stickers</span></div>
+    </div>
+    <div class="srv-card" data-reveal="up" data-delay="2">
+      <div class="srv-num">05</div>
+      <div class="srv-title">Eco Packaging</div>
+      <div class="srv-body">100% recyclable and biodegradable packaging using kraft, sugarcane pulp, and FSC-certified materials meeting all sustainability regulations.</div>
+      <div class="srv-tags"><span class="srv-tag">Kraft Paper</span><span class="srv-tag">FSC Certified</span><span class="srv-tag">EPR Ready</span></div>
+    </div>
+    <div class="srv-card" data-reveal="up" data-delay="3">
+      <div class="srv-num">06</div>
+      <div class="srv-title">Labels & Stickers</div>
+      <div class="srv-body">Custom-printed labels and stickers with short-run digital printing. Low minimums, fast turnaround, premium finish every time.</div>
+      <div class="srv-tags"><span class="srv-tag">Labels</span><span class="srv-tag">Stickers</span><span class="srv-tag">Short Run</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESS ══ -->
+<section id="process">
+  <div class="proc-bg-arch proc-bg-arch-1"></div>
+  <div class="proc-bg-arch proc-bg-arch-2"></div>
+  <div class="proc-bg-arch proc-bg-arch-3"></div>
+  <div class="proc-head" data-reveal="up">
+    <div class="s-eye light">Our Process</div>
+    <h2 class="s-h light" style="text-align:center;">Simple. Fast. <em>Seamless.</em></h2>
+  </div>
+  <div class="proc-steps" style="position:relative;z-index:1;">
+    <div class="proc-connector"></div>
+    <div class="proc-step" data-reveal="up" data-delay="1">
+      <div class="ps-circle"><div class="ps-n">01</div></div>
+      <div class="ps-title">Share Your Brief</div>
+      <div class="ps-body">Tell us your product size, material preferences, print finish, quantity, and brand guidelines.</div>
+    </div>
+    <div class="proc-step" data-reveal="up" data-delay="2">
+      <div class="ps-circle"><div class="ps-n">02</div></div>
+      <div class="ps-title">Design Proof</div>
+      <div class="ps-body">Receive a full custom dieline and design proof within 48 hours for your review and approval.</div>
+    </div>
+    <div class="proc-step" data-reveal="up" data-delay="3">
+      <div class="ps-circle"><div class="ps-n">03</div></div>
+      <div class="ps-title">Production</div>
+      <div class="ps-body">We produce your order with precision. Regular updates keep you informed at every stage.</div>
+    </div>
+    <div class="proc-step" data-reveal="up" data-delay="4">
+      <div class="ps-circle"><div class="ps-n">04</div></div>
+      <div class="ps-title">Global Delivery</div>
+      <div class="ps-body">Your packaging ships globally with full tracking — arriving in 10–14 business days.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ECO ══ -->
+<section id="eco">
+  <div class="eco-l" data-reveal="left">
+    <div class="s-eye">Sustainability</div>
+    <h2 class="s-h">Packaging your<br>brand can be<br><em>proud of.</em></h2>
+    <p class="s-body">Every material we use is selected with sustainability in mind. Beautiful packaging and environmental responsibility are not in conflict — they are inseparable.</p>
+    <div class="eco-feats">
+      <div class="eco-feat"><div class="eco-dot"><div class="eco-dot-inner"></div></div><div class="eco-feat-txt">100% recyclable and biodegradable materials</div></div>
+      <div class="eco-feat"><div class="eco-dot"><div class="eco-dot-inner"></div></div><div class="eco-feat-txt">FSC-certified paper and board sources</div></div>
+      <div class="eco-feat"><div class="eco-dot"><div class="eco-dot-inner"></div></div><div class="eco-feat-txt">Soy-based inks — zero harsh chemicals</div></div>
+      <div class="eco-feat"><div class="eco-dot"><div class="eco-dot-inner"></div></div><div class="eco-feat-txt">EPR regulation compliant packaging</div></div>
+      <div class="eco-feat"><div class="eco-dot"><div class="eco-dot-inner"></div></div><div class="eco-feat-txt">Carbon-conscious delivery options available</div></div>
+    </div>
+    <a href="#contact" class="btn btn-blue"><span>Request Eco Sample Kit</span></a>
+  </div>
+  <div class="eco-r" data-reveal="right">
+    <div class="eco-r-arch eco-r-arch-1"></div>
+    <div class="eco-r-arch eco-r-arch-2"></div>
+    <div class="eco-big">100%</div>
+    <div class="eco-sub">Eco Verified Materials</div>
+    <div class="eco-rule"></div>
+    <div class="eco-promise">"Sustainable packaging is no longer a choice — it is the standard we built Heritage Shapes around."</div>
+    <div class="eco-badge"><span>Heritage Shapes · Eco Verified · Global Delivery</span></div>
+  </div>
+</section>
+
+<!-- ══ NUMBERS ══ -->
+<section id="numbers">
+  <div class="nums-grid">
+    <div class="num-item" data-reveal="up" data-delay="1">
+      <span class="num-val"><span class="cu" data-t="200">0</span>+</span>
+      <div class="num-lbl">Minimum Units</div>
+    </div>
+    <div class="num-item" data-reveal="up" data-delay="2">
+      <span class="num-val"><span class="cu" data-t="14">0</span></span>
+      <div class="num-lbl">Days Turnaround</div>
+    </div>
+    <div class="num-item" data-reveal="up" data-delay="3">
+      <span class="num-val"><span class="cu" data-t="60">0</span>%</span>
+      <div class="num-lbl">Cost Saving</div>
+    </div>
+    <div class="num-item" data-reveal="up" data-delay="4">
+      <span class="num-val"><span class="cu" data-t="100">0</span>%</span>
+      <div class="num-lbl">Eco Materials</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRODUCTS ══ -->
+<section id="products">
+  <div class="prod-head" data-reveal="up">
+    <div>
+      <div class="s-eye">Our Products</div>
+      <h2 class="s-h">Every format your<br>brand <em>needs.</em></h2>
+    </div>
+    <a href="#contact" class="btn btn-outline-blue"><span>Request a Quote</span></a>
+  </div>
+  <div class="prod-grid">
+    <div class="prod-card" data-reveal="up" data-delay="1">
+      <div class="prod-vis pv1"><div class="prod-arch-wrap"><div class="pa-outer"><div class="pa-inner"></div></div><div class="pa-line"></div></div></div>
+      <div class="prod-body"><div class="prod-title">Custom Mailer Boxes</div><div class="prod-desc">Ecommerce-ready custom mailer boxes with full-colour print inside and out. Self-locking, no tape needed.</div><div class="prod-meta"><span class="prod-tag">From 200 units</span><span class="prod-tag">·</span><span class="prod-tag">Any finish</span></div></div>
+    </div>
+    <div class="prod-card" data-reveal="up" data-delay="2">
+      <div class="prod-vis pv2"><div class="prod-arch-wrap"><div class="pa-outer"><div class="pa-inner"></div></div><div class="pa-line"></div></div></div>
+      <div class="prod-body"><div class="prod-title">Rigid Gift Boxes</div><div class="prod-desc">Premium rigid boxes with magnetic closure for luxury unboxing. Perfect for beauty, fashion, and gifting brands.</div><div class="prod-meta"><span class="prod-tag">Magnetic closure</span><span class="prod-tag">·</span><span class="prod-tag">Foil options</span></div></div>
+    </div>
+    <div class="prod-card" data-reveal="up" data-delay="3">
+      <div class="prod-vis pv3"><div class="prod-arch-wrap"><div class="pa-outer"><div class="pa-inner"></div></div><div class="pa-line"></div></div></div>
+      <div class="prod-body"><div class="prod-title">Kraft Eco Mailers</div><div class="prod-desc">100% recyclable kraft paper mailers — lightweight, durable, and fully customisable with your branding.</div><div class="prod-meta"><span class="prod-tag">FSC certified</span><span class="prod-tag">·</span><span class="prod-tag">Biodegradable</span></div></div>
+    </div>
+    <div class="prod-card" data-reveal="up" data-delay="1">
+      <div class="prod-vis pv4"><div class="prod-arch-wrap"><div class="pa-outer"><div class="pa-inner"></div></div><div class="pa-line"></div></div></div>
+      <div class="prod-body"><div class="prod-title">Custom Tissue Paper</div><div class="prod-desc">Branded tissue paper with custom print patterns. Available in any colour for a premium interior experience.</div><div class="prod-meta"><span class="prod-tag">Custom print</span><span class="prod-tag">·</span><span class="prod-tag">Any colour</span></div></div>
+    </div>
+    <div class="prod-card" data-reveal="up" data-delay="2">
+      <div class="prod-vis pv5"><div class="prod-arch-wrap"><div class="pa-outer"><div class="pa-inner"></div></div><div class="pa-line"></div></div></div>
+      <div class="prod-body"><div class="prod-title">Labels & Stickers</div><div class="prod-desc">Short-run custom labels and stickers with digital print. Low minimums, fast turnaround, high-quality finish.</div><div class="prod-meta"><span class="prod-tag">Short run</span><span class="prod-tag">·</span><span class="prod-tag">Fast turnaround</span></div></div>
+    </div>
+    <div class="prod-card" data-reveal="up" data-delay="3">
+      <div class="prod-vis pv6"><div class="prod-arch-wrap"><div class="pa-outer"><div class="pa-inner"></div></div><div class="pa-line"></div></div></div>
+      <div class="prod-body"><div class="prod-title">Full Unboxing Kits</div><div class="prod-desc">Complete unboxing packages: box, tissue, sticker seal, thank-you card, and insert — all custom branded.</div><div class="prod-meta"><span class="prod-tag">Complete kit</span><span class="prod-tag">·</span><span class="prod-tag">All inclusive</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section id="testi">
+  <div class="testi-head" data-reveal="up">
+    <div class="s-eye">Client Stories</div>
+    <h2 class="s-h">Brands that trust<br><em>Heritage Shapes.</em></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card" data-reveal="up" data-delay="1">
+      <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+      <div class="tc-quote">"Our packaging completely transformed how customers perceive our brand. The unboxing moment alone increased our repeat purchase rate significantly."</div>
+      <div class="tc-rule"></div>
+      <div class="tc-name">Sarah Mitchell</div>
+      <div class="tc-role">Founder · Bloom & Co. — Beauty Brand</div>
+      <div class="tc-badge">Verified Client</div>
+    </div>
+    <div class="testi-card" data-reveal="up" data-delay="2">
+      <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+      <div class="tc-quote">"The quality matched exactly what we'd pay double for elsewhere. Heritage Shapes made switching our entire packaging range effortless and affordable."</div>
+      <div class="tc-rule"></div>
+      <div class="tc-name">James Carter</div>
+      <div class="tc-role">Operations Director · Nora Home</div>
+      <div class="tc-badge">Verified Client</div>
+    </div>
+    <div class="testi-card" data-reveal="up" data-delay="3">
+      <div class="tc-stars"><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div><div class="tc-star"></div></div>
+      <div class="tc-quote">"Fast, responsive, and genuinely invested in making our packaging look incredible. The eco credentials helped our sustainability story enormously."</div>
+      <div class="tc-rule"></div>
+      <div class="tc-name">Amelia Torres</div>
+      <div class="tc-role">CEO · Verde Studio — Wellness Brand</div>
+      <div class="tc-badge">Verified Client</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section id="cta">
+  <div class="cta-arch cta-arch-1"></div>
+  <div class="cta-arch cta-arch-2"></div>
+  <div class="cta-arch cta-arch-3"></div>
+  <div class="cta-glow"></div>
+  <div class="cta-inner" data-reveal="up">
+    <div class="s-eye light">Ready to elevate your brand?</div>
+    <h2 class="s-h light" style="text-align:center;margin-bottom:18px;">Request your free<br><em>sample kit today.</em></h2>
+    <p class="s-body" style="text-align:center;color:rgba(255,255,255,.55);">Experience the Heritage Shapes difference before ordering a single unit. We'll send a curated selection of our best packaging — completely complimentary.</p>
+    <div class="cta-btns" style="margin-top:42px;">
+      <a href="#contact" class="btn btn-white"><span>Request Sample Kit</span></a>
+      <a href="#contact" class="btn btn-outline-white"><span>Get a Custom Quote</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="con-l" data-reveal="left">
+    <div class="s-eye light">Get In Touch</div>
+    <h2 class="s-h light">Let's build something<br><em>extraordinary</em><br>together.</h2>
+    <p class="con-sub">Whether starting fresh or switching suppliers, we'd love to hear about your brand and show you what Heritage Shapes can create.</p>
+    <div class="con-items">
+      <div class="con-item"><div class="ci-icon"><div class="ci-dot"></div></div><div><div class="ci-label">Email</div><div class="ci-val">hello@heritageshapes.com</div></div></div>
+      <div class="con-item"><div class="ci-icon"><div class="ci-dot"></div></div><div><div class="ci-label">WhatsApp</div><div class="ci-val">Available for quick quotes and queries</div></div></div>
+      <div class="con-item"><div class="ci-icon"><div class="ci-dot"></div></div><div><div class="ci-label">Response Time</div><div class="ci-val">Within 24 hours on all enquiries</div></div></div>
+      <div class="con-item"><div class="ci-icon"><div class="ci-dot"></div></div><div><div class="ci-label">Sample Kits</div><div class="ci-val">Free — shipped globally on request</div></div></div>
+    </div>
+  </div>
+  <div class="con-r" data-reveal="right">
+    <div id="conForm">
+      <div class="f-row">
+        <div class="f-group"><label class="f-label">First Name</label><input class="f-input" type="text" placeholder="Your first name"></div>
+        <div class="f-group"><label class="f-label">Last Name</label><input class="f-input" type="text" placeholder="Your last name"></div>
+      </div>
+      <div class="f-group"><label class="f-label">Email Address</label><input class="f-input" type="email" placeholder="your@email.com"></div>
+      <div class="f-group"><label class="f-label">Brand / Company</label><input class="f-input" type="text" placeholder="Your brand name"></div>
+      <div class="f-group">
+        <label class="f-label">I'm Interested In</label>
+        <select class="f-select">
+          <option value="">Select a service...</option>
+          <option>Custom Mailer Boxes</option>
+          <option>Rigid Gift Boxes</option>
+          <option>Eco / Kraft Packaging</option>
+          <option>Full Unboxing Kit</option>
+          <option>Labels & Stickers</option>
+          <option>Free Sample Kit</option>
+          <option>Custom Quote</option>
+        </select>
+      </div>
+      <div class="f-group"><label class="f-label">Tell Us About Your Project</label><textarea class="f-textarea" placeholder="Approximate quantity, size, materials, timeline..."></textarea></div>
+      <button class="f-btn" onclick="submitForm()"><span>Send Enquiry</span></button>
+      <div class="f-note">We respond to all enquiries within 24 hours.</div>
+    </div>
+    <div class="f-success" id="fSuccess">
+      <div class="f-success-msg">Thank you for reaching out to Heritage Shapes.<br>We'll be in touch within 24 hours.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div>
+    <div class="ft-brand">
+      <div class="nav-mark"><div class="nm-arch" style="border-color:rgba(255,255,255,.25);"></div><div class="nm-base" style="background:rgba(255,255,255,.25);"></div></div>
+      <div class="ft-name">Heritage Shapes</div>
+    </div>
+    <div class="ft-desc">Premium printing, packaging, and branding for ambitious ecommerce brands worldwide. Crafted with precision. Delivered globally.</div>
+  </div>
+  <div>
+    <div class="ft-col-title">Services</div>
+    <div class="ft-links">
+      <a href="#services">Custom Packaging</a>
+      <a href="#services">Premium Printing</a>
+      <a href="#services">Eco Packaging</a>
+      <a href="#services">Unboxing Kits</a>
+      <a href="#services">Labels & Stickers</a>
+    </div>
+  </div>
+  <div>
+    <div class="ft-col-title">Company</div>
+    <div class="ft-links">
+      <a href="#about">About Us</a>
+      <a href="#process">Our Process</a>
+      <a href="#testi">Client Stories</a>
+      <a href="#eco">Sustainability</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div>
+    <div class="ft-col-title">Get Started</div>
+    <div class="ft-links">
+      <a href="#contact">Request Sample Kit</a>
+      <a href="#contact">Get a Quote</a>
+      <a href="#contact">WhatsApp Us</a>
+    </div>
+    <div style="margin-top:22px;font-size:9px;font-weight:700;letter-spacing:2px;color:rgba(27,107,147,.4);text-transform:uppercase;">heritageshapes.com</div>
+  </div>
+</footer>
+<div class="ft-bottom">
+  <div class="ft-copy">© 2026 Heritage Shapes. All rights reserved.</div>
+  <div class="ft-tagline">Printing · Packaging · Branding</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
